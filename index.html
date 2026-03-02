@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIEUWE — HYDRATION PROTOCOL_01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Global FX -->
+  <div class="fx" aria-hidden="true">
+    <div class="fx-grain"></div>
+    <div class="fx-scanlines"></div>
+    <div class="fx-vignette"></div>
+    <div class="fx-fog"></div>
+  </div>
+
+  <main class="shell">
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="mark">
+        <span class="mark-dot"></span>
+        <span class="mark-text">HYDRATION PROTOCOL_01</span>
+      </div>
+
+      <div class="topbar-right">
+        <div class="live-pill">
+          <span class="live-led"></span>
+          <span class="live-text">LIVE SYSTEM</span>
+        </div>
+
+        <button class="menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker" data-reveal>DISCIPLINE • FOCUS • SYSTEM</p>
+
+          <h1 class="title" data-reveal>
+            DIEUWE<br />
+            <span class="title-accent">BUIJINK</span>
+          </h1>
+
+          <div class="meta" data-reveal>
+            <span class="badge">22</span>
+            <span class="sep">|</span>
+            <span class="badge">Nederlands</span>
+            <span class="sep">|</span>
+            <span class="badge">GAME DESIGN</span>
+          </div>
+
+          <p class="sub" data-reveal>
+            Gym freak. Adventure built. Runs on water.
+            Daily target: <strong>4.5L</strong>.
+          </p>
+
+          <div class="cta" data-reveal>
+            <a class="btn primary" href="#tracker">START TRACKING</a>
+            <a class="btn ghost" href="#wall">OPEN MEMORY WALL</a>
+          </div>
+
+          <!-- Boot + XP -->
+          <div class="hud" data-reveal>
+            <div class="hud-card">
+              <div class="hud-label">SYSTEM BOOT</div>
+              <div class="hud-value" id="bootStatus">INITIALIZING</div>
+
+              <div class="bar">
+                <div class="bar-fill" id="bootFill"></div>
+              </div>
+
+              <div class="hud-meta">
+                <span>PROTOCOL</span>
+                <span id="bootPct">0%</span>
+              </div>
+            </div>
+
+            <div class="hud-card">
+              <div class="hud-label">HYDRATION XP</div>
+              <div class="hud-value big">
+                <span id="heroLiters">0.0</span><span class="unit">L</span>
+              </div>
+
+              <div class="bar xp">
+                <div class="bar-fill xpfill" id="heroXP"></div>
+              </div>
+
+              <div class="hud-meta">
+                <span>TARGET</span>
+                <span class="mono">4.5L</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product (bottle) -->
+        <div class="hero-product" data-reveal>
+          <div class="frame tilt">
+            <div class="frame-top">
+              <span class="mono">FUEL UNIT</span>
+              <span class="muted mono">SERIES 01</span>
+            </div>
+
+            <img class="bottle" src="assets/image-removebg-preview (39).png" alt="Dieuwe hydration bottle" />
+
+            <div class="frame-bottom">
+              <span class="chip blue">DISCIPLINE ACTIVE</span>
+              <span class="chip green">FOCUS BOOST</span>
+            </div>
+
+            <div class="corn tl"></div><div class="corn tr"></div>
+            <div class="corn bl"></div><div class="corn br"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom strip -->
+      <div class="hero-strip" aria-label="Traits">
+        <span>DISCIPLINED</span>
+        <span class="strip-dot">•</span>
+        <span>CREATIVE</span>
+        <span class="strip-dot">•</span>
+        <span>ADVENTUROUS</span>
+      </div>
+    </section>
+
+    <!-- MEMORY WALL -->
+    <section class="wall" id="wall">
+      <header class="section-head" data-reveal>
+        <div>
+          <p class="section-kicker">CHARACTER FILE</p>
+          <h2 class="section-title">Memory wall</h2>
+        </div>
+
+        <div class="section-right">
+          <div class="mini-pill">
+            <span class="mini-led"></span>
+            <span class="mono">SYNCED</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="wall-grid">
+        <!-- BIG feature -->
+        <article class="card feature tilt" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-24 105222.png" alt="Mountains / adventure" />
+          <div class="card-overlay">
+            <div class="card-title">ADVENTURE MODE</div>
+            <div class="card-sub mono">HIGH ALTITUDE / FULL FOCUS</div>
+          </div>
+          <div class="tape t1"></div>
+          <div class="tape t2"></div>
+        </article>
+
+        <article class="card tilt" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-24 105251.png" alt="Architecture photography" />
+          <div class="card-overlay">
+            <div class="card-title">ARCHITECTURE SHOTS</div>
+            <div class="card-sub mono">BRUTAL LINES / CLEAN FRAME</div>
+          </div>
+          <div class="tape t1"></div>
+        </article>
+
+        <article class="card tilt hades" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-24 105259.png" alt="Hades vibe / game reference" />
+          <div class="card-overlay">
+            <div class="card-title">HADES ENERGY</div>
+            <div class="card-sub mono">INTENSE / CONTROLLED / FAST</div>
+          </div>
+          <div class="tape t2"></div>
+        </article>
+
+        <article class="card tilt" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-24 105233.png" alt="Sushi / Korean BBQ" />
+          <div class="card-overlay">
+            <div class="card-title">FOOD FUEL</div>
+            <div class="card-sub mono">SUSHI + K-BBQ / SPICE OK</div>
+          </div>
+          <div class="tape t1"></div>
+        </article>
+
+        <article class="card tilt" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-13 105524.png" alt="Gym training" />
+          <div class="card-overlay">
+            <div class="card-title">GYM PROTOCOL</div>
+            <div class="card-sub mono">DISCIPLINE OVER MOTIVATION</div>
+          </div>
+          <div class="tape t2"></div>
+        </article>
+
+        <article class="card tilt" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-24 105310.png" alt="Hoorn" />
+          <div class="card-overlay">
+            <div class="card-title">HOORN</div>
+            <div class="card-sub mono">HOME BASE</div>
+          </div>
+          <div class="tape t1"></div>
+        </article>
+
+        <article class="card tilt" data-reveal>
+          <img src="assets/Schermafbeelding 2026-02-24 105233.png" alt="Seoul" />
+          <div class="card-overlay">
+            <div class="card-title">SEOUL</div>
+            <div class="card-sub mono">TRAVEL MEMORY</div>
+          </div>
+          <div class="tape t2"></div>
+        </article>
+
+        <article class="card tilt" data-reveal>
+          <img src="assets/broers.jpg" alt="Broers" />
+          <div class="card-overlay">
+            <div class="card-title">BROERS</div>
+            <div class="card-sub mono">CORE PARTY</div>
+          </div>
+          <div class="tape t1"></div>
+          <div class="tape t2"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TRACKER / STATS -->
+    <section class="tracker" id="tracker">
+      <header class="section-head" data-reveal>
+        <div>
+          <p class="section-kicker">MECHANIC</p>
+          <h2 class="section-title">Hydration system</h2>
+        </div>
+        <div class="section-right">
+          <div class="rank" id="rank">RANK: WARMUP</div>
+        </div>
+      </header>
+
+      <div class="tracker-grid">
+        <!-- Left: interactive tracker -->
+        <div class="panel tilt" data-reveal>
+          <div class="panel-top">
+            <span class="mono">TODAY</span>
+            <span class="mono"><span id="pct">0</span>%</span>
+          </div>
+
+          <div class="meter">
+            <div class="meter-bar">
+              <div class="meter-fill" id="fill"></div>
+            </div>
+
+            <div class="meter-meta">
+              <span class="mono"><span id="cur">0.0</span>L</span>
+              <span class="muted">/ 4.5L</span>
+            </div>
+
+            <div class="meter-status">
+              <span class="muted">STATUS</span>
+              <span class="mono" id="status">LOW POWER</span>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="ctrl" data-add="0.25">+0.25L</button>
+            <button class="ctrl" data-add="0.50">+0.50L</button>
+            <button class="ctrl" data-add="1.00">+1.00L</button>
+            <button class="ctrl danger" id="reset">RESET</button>
+          </div>
+
+          <div class="log" id="log" aria-label="Hydration log"></div>
+        </div>
+
+        <!-- Right: stats that react -->
+        <div class="panel tilt" data-reveal>
+          <div class="panel-top">
+            <span class="mono">OUTPUT STATS</span>
+            <span class="muted mono">DYNAMIC</span>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-head">
+                <span class="mono">FOCUS</span>
+                <span class="mono" id="focusV">70%</span>
+              </div>
+              <div class="sbar"><div class="sfill blue" id="focusB"></div></div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-head">
+                <span class="mono">DISCIPLINE</span>
+                <span class="mono" id="discV">85%</span>
+              </div>
+              <div class="sbar"><div class="sfill green" id="discB"></div></div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-head">
+                <span class="mono">OUTPUT</span>
+                <span class="mono" id="outV">60%</span>
+              </div>
+              <div class="sbar"><div class="sfill warm" id="outB"></div></div>
+            </div>
+          </div>
+
+          <div class="note">
+            <div class="note-title mono">SYSTEM NOTE</div>
+            <p class="note-text">
+              4.5L = full boost. Focus locks in. Output goes up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="muted mono">© PROTOCOL_01 — DIEUWE</span>
+      <span class="muted mono">NAVY • GREEN • CINEMATIC</span>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
